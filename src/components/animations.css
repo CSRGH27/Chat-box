@@ -1,0 +1,22 @@
+ .fade-enter {
+     /*On commence par le nom du classnames c'est a dire fade , enter pour le debut                           de l'anim et active pour la fin de l'anim */
+     opacity: 0.01;
+     transform: scale(0.9) translateY(-50%)
+ }
+
+ .fade-enter-active {
+     opacity: 1;
+     transition: all 200ms ease-in-out;
+     transform: scale(1) translateY(0%);
+ }
+
+ .fade-exit {
+     opacity: 1;
+     transform: scale(1) translateY(0%);
+ }
+
+ .fade-exit-active {
+     opacity: 0.01;
+     transform: scale(0.9) translateY(-50%);
+     transition: all 200ms ease-in-out;
+ }
